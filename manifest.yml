@@ -2,7 +2,7 @@
 language: python
 default_versions:
 - name: python
-  version: 2.7.14
+  version: 3.6.5
 dependency_deprecation_dates:
 - version_line: 2.7.x
   name: python
@@ -131,6 +131,12 @@ dependencies:
   version: 39.2.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/setuptools/setuptools-39.2.0-f7cddbb5.zip
   sha256: f7cddbb5f5c640311eb00eab6e849f7701fa70bf6a183fc8a2c33dd1d1672fb2
+  cf_stacks:
+  - cflinuxfs2
+- name: mecab
+  version: 0.996
+  uri: https://raw.githubusercontent.com/chfly2000/python-buildpack/master/fixtures/mecab/mecab-0.996.tgz
+  sha256: e5ad542dced00342b280f0c58a3e9825fa26abf3c936e470f6727381192aeb56
   cf_stacks:
   - cflinuxfs2
 include_files:
